@@ -31,7 +31,7 @@
             "type": "bool"
         },
         "redisDeploySwitch": {
-            "defaultValue": true,
+            "defaultValue": false,
             "metadata": {
                 "description": "Switch to deploy a redis cache or not"
             },
@@ -59,7 +59,7 @@
             "type": "bool"
         },
         "htmlLocalCopySwitch": {
-            "defaultValue": false,
+            "defaultValue": true,
             "metadata": {
                 "description": "Switch to create a local copy of /moodle/html or not"
             },
@@ -119,7 +119,7 @@
             "type": "string"
         },
         "autoscaleVmSku": {
-            "defaultValue": "Standard_DS2_v2",
+            "defaultValue": "Standard_DS1_v2",
             "metadata": {
                 "description": "VM size for autoscaled nodes"
             },
@@ -175,7 +175,7 @@
             "type": "int"
         },
         "fileServerDiskCount": {
-            "defaultValue": 4,
+            "defaultValue": 2,
             "minValue": 2,
             "maxValue": 8,
             "metadata": {
@@ -220,7 +220,7 @@
                 400,
                 800
             ],
-            "defaultValue": 100,
+            "defaultValue": 50,
             "metadata": {
                 "description": "MySql/Postgresql database trasaction units"
             },
@@ -286,14 +286,14 @@
                 "MYSQLS400",
                 "MYSQLS800"
             ],
-            "defaultValue": "MYSQLS100",
+            "defaultValue": "MYSQLB50",
             "metadata": {
                 "description": "MySql/Postgresql sku name"
             },
             "type": "string"
         },
         "skuSizeMB": {
-            "defaultValue": 128000,
+            "defaultValue": 51200,
             "metadata": {
                 "description": "MySql/Postgresql sku size in MB. For Basic tier, minimum 50GB, increased by 125GB up to 1TB. For Standard tier, minimum 125GB, increase by 125GB up to 1TB"
             },
@@ -304,7 +304,7 @@
                 "Basic",
                 "Standard"
             ],
-            "defaultValue": "Standard",
+            "defaultValue": "Basic",
             "metadata": {
                 "description": "MySql/Postgresql sku tier"
             },
